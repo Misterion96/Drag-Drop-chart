@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {GetDataService} from "../../shared/get-data.service";
 import {DailyPlan} from "../../interfaces/interfaces";
-
+import {registerLocaleData} from "@angular/common";
+import localeRu from '@angular/common/locales/ru';
+registerLocaleData(localeRu);
 
 @Component({
   selector: 'app-chart-bar',
@@ -26,10 +28,11 @@ export class ChartBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getDataService.getData().subscribe(res => {
+    this.getDataService.getData()
+      .then(res => {
       res.days.map(day => {
-        day.target = (80 * day.targetValue / res.maxValue).toFixed(0)
-        day.present = (80 * day.presentValue / day.targetValue).toFixed(0)
+        day.target = (82 * day.targetValue / res.maxValue).toFixed(0)
+        day.present = (82 * day.presentValue / day.targetValue).toFixed(0)
       })
       this.data = res
     })
