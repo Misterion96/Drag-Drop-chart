@@ -37,7 +37,22 @@ export class ChartBarComponent implements OnInit {
         })
         this.data = res
       })
-
+      setInterval(()=>{
+        const t = randomInteger(40, 50);
+        const p = randomInteger(0, 40);
+        this.data.days.push({
+          date: new Date(),
+          targetValue: t,
+          presentValue: p,
+          target: (82 * t / this.data.maxValue).toFixed(0),
+          present: (82 * p / t).toFixed(0)
+        })
+      }, 2000)
   }
 
+}
+
+function randomInteger(min, max) {
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
 }
