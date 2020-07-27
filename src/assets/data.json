@@ -1,0 +1,219 @@
+{
+  "maxValue": 50,
+  "minValue": 0,
+  "midValue": 25,
+  "targetName": "Плановое значение",
+  "presentName": "Фактическое значение",
+  "days": [
+    {
+      "date": "2020-07-26T15:34:36+00:00",
+      "targetValue": 40,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-07-27T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 26
+    },
+    {
+      "date": "2020-07-28T15:34:36+00:00",
+      "targetValue": 42,
+      "presentValue": 27
+    },
+    {
+      "date": "2020-07-29T15:34:36+00:00",
+      "targetValue": 43,
+      "presentValue": 28
+    },
+    {
+      "date": "2020-07-30T15:34:36+00:00",
+      "targetValue": 44,
+      "presentValue": 29
+    },
+    {
+      "date": "2020-07-31T15:34:36+00:00",
+      "targetValue": 45,
+      "presentValue": 44
+    },
+    {
+      "date": "2020-08-01T15:34:36+00:00",
+      "targetValue": 46,
+      "presentValue": 45
+    },
+    {
+      "date": "2020-08-02T15:34:36+00:00",
+      "targetValue": 47,
+      "presentValue": 47
+    },
+    {
+      "date": "2020-08-03T15:34:36+00:00",
+      "targetValue": 48,
+      "presentValue": 48
+    },
+    {
+      "date": "2020-08-04T15:34:36+00:00",
+      "targetValue": 49,
+      "presentValue": 49
+    },
+    {
+      "date": "2020-08-05T15:34:36+00:00",
+      "targetValue": 50,
+      "presentValue": 50
+    },
+    {
+      "date": "2020-08-06T15:34:36+00:00",
+      "targetValue": 49,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-07T15:34:36+00:00",
+      "targetValue": 48,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-08T15:34:36+00:00",
+      "targetValue": 47,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-09T15:34:36+00:00",
+      "targetValue": 46,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-10T15:34:36+00:00",
+      "targetValue": 45,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-11T15:34:36+00:00",
+      "targetValue": 44,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-12T15:34:36+00:00",
+      "targetValue": 43,
+      "presentValue": 25
+    },
+    {
+      "date": "2020-08-13T15:34:36+00:00",
+      "targetValue": 42,
+      "presentValue": 30
+    },
+    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },    {
+      "date": "2020-08-14T15:34:36+00:00",
+      "targetValue": 41,
+      "presentValue": 10
+    },
+    {
+      "date": "2020-08-15T15:34:36+00:00",
+      "targetValue": 40,
+      "presentValue": 40
+    }
+  ]
+}
+

@@ -1,0 +1,39 @@
+@import 'styles/*'
+
+.container {
+  max-width 1400px
+}
+
+.chart
+  max-width 1050px
+  padding-top 20px
+  background $bgColor
+  font-size 10px
+  font-family Tahoma, Verdana, Geneva, Tahoma, sans-serif
+  color $fontColor-on
+  position relative
+  display flex
+  flex-direction row
+  align-items flex-start
+
+  &__body
+    overflow auto
+    display flex
+    flex-direction row
+    padding: 0 4px 20px 4px
+  &__arrow
+    display flex
+    width 20px
+    height 98px
+    margin-left: 10px
+    padding-top: 12px
+    flex-direction column
+    justify-content space-between
+    align-items flex-end
+    border-right 1px solid $borderColor
+    opacity: 0.8
+    span
+      display: flex
+      margin-right: 0.5rem
+      &:last-child
+        padding-bottom: 10px;

@@ -1,0 +1,43 @@
+<p>chart-bar works!</p>
+<div class="container">
+  <div class="chart">
+    <div class="chart__arrow">
+      <span>{{data.maxValue}}</span>
+      <span>{{data.midValue}}</span>
+      <span>{{data.minValue}}</span>
+    </div>
+    <div
+      appRangeSelection
+      [childSelector]="'.bar'"
+      class="chart__body"
+      id="scrollbar">
+      <div class="range" draggable="true" [attr.data-range]="'left'">
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <div class="range" draggable="true" [attr.data-range]="'right'">
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <div class="bar"
+           [attr.outside]="'right'"
+           *ngFor="let day of data.days"
+      >
+        <div class="bar__progress"
+             title="Плановое значение: {{day.targetValue}}
+Фактическое значение: {{day.presentValue}}"
+             [ngStyle]="{ height: day.target + 'px'}"
+        >
+          <div class="bar__progress-plan"
+               [ngStyle]="{height: day.present+'px'}"
+          >
+          </div>
+        </div>
+        <div class="bar__date"
+             title="Дата {{day.date | date: 'medium': '+0500'}}">
+          <span>{{day.date | date:'d'}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

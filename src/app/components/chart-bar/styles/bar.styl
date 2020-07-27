@@ -1,0 +1,49 @@
+@import "variables.styl"
+.bar
+  height $barHeight
+  min-width $barWidth
+  margin 10px 1px 10px 1px
+  display flex
+  flex-direction column
+  align-items center
+  justify-content flex-end
+
+  &__progress
+    display flex
+    flex-direction column
+    align-items center
+    justify-content flex-end
+    height 50px
+    width 100%
+    overflow: hidden
+    border-top: 1px dashed white
+    &-plan
+      background: url('../../../assets/bar.png');
+      background-repeat: repeat-y;
+      background-position: bottom;
+      background-size: 13px;
+      height: 40px;
+      width: 15px;
+      opacity: .5;
+  &__date
+    display: flex;
+    width: 100%;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    padding: 1px;
+    span
+      display: block;
+      width: 100%;
+      background: none;
+      color: $fontColor-off
+      text-align: center;
+
+.active
+  background: $bgColor-active
+  color $fontColor-on
+  .bar__date
+    span
+      background: $bgColor-data
+      color: $fontColor-on
+  .bar__progress-plan
+    opacity: 1

@@ -1,0 +1,21 @@
+@import "variables.styl"
+.range
+  width: 3px;
+  background: $bgColor-data !important
+  position: relative;
+  cursor: move;
+  border 1px solid $bgColor-data
+  margin 0 4px 0 1px
+  z-index 1000;
+  .circle
+    position: absolute;
+    left: -3px;
+    display: block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: $bgColor-data
+    &:first-child
+      top: -1px
+    &:last-child
+      bottom: -1px;

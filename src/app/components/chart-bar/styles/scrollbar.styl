@@ -1,0 +1,18 @@
+@import "variables.styl"
+.chart__body
+  &::-webkit-scrollbar
+    background-color $bgColor
+    height: 5px;
+  &::-webkit-scrollbar-thumb
+    -webikit-height: 10px
+    background-color $borderColor
+    border-radius 5px
+  &::-webkit-scrollbar-thumb:hover
+    background-color #eee
+  &::-webkit-scrollbar-thumb:active
+    background-color #eee
+  &::-webkit-scrollbar-track {
+    background: $borderColor
+    border: 1px solid transparent;
+    background-clip: content-box;   /* THIS IS IMPORTANT */
+}
