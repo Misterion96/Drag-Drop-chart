@@ -5,10 +5,11 @@ import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 })
 export class RangeSelectionDirective {
   rangeBarActive: Element;
-  test: any;
   @Input('childSelector') childSelector: string;
 
-  constructor(private _el: ElementRef) {}
+  constructor(private _el: ElementRef) {
+  }
+
   @HostListener('dragstart', ['$event.target']) onDragstart(target: Element) {
     this.rangeBarActive = target;
   }
@@ -17,11 +18,10 @@ export class RangeSelectionDirective {
     const typeSide = target.getAttribute('data-range');
     let getOutRangeSib, getInRangeSib
 
-    if(typeSide === 'left') {
+    if (typeSide === 'left') {
       getOutRangeSib = 'previousElementSibling'
       getInRangeSib = 'nextElementSibling'
-    }
-    else{
+    } else {
       getOutRangeSib = 'nextElementSibling'
       getInRangeSib = 'previousElementSibling'
     }
@@ -29,15 +29,15 @@ export class RangeSelectionDirective {
     let outRangeSib = target[getOutRangeSib]
     let inRangeSib = target[getInRangeSib]
 
-    while(outRangeSib){
+    while (outRangeSib) {
       outRangeSib.setAttribute('outside', typeSide)
       outRangeSib.classList.remove('active')
       outRangeSib = outRangeSib[getOutRangeSib]
-      if((outRangeSib && outRangeSib.getAttribute('outside')) || outRangeSib === null){
+      if ((outRangeSib && outRangeSib.getAttribute('outside')) || outRangeSib === null) {
         break;
       }
     }
-    while(!inRangeSib.getAttribute('data-range')){
+    while (!inRangeSib.getAttribute('data-range')) {
       inRangeSib.classList.add('active')
       inRangeSib.removeAttribute('outside')
       inRangeSib = inRangeSib[getInRangeSib];
@@ -54,16 +54,20 @@ export class RangeSelectionDirective {
     const prevElSib = 'previousElementSibling'
 
     if (!overDragEl ||
-       (overDragEl.getAttribute('outside') && overDragEl.getAttribute('outside') !== typeSideRange)
-    ) {return}
+      (overDragEl.getAttribute('outside') && overDragEl.getAttribute('outside') !== typeSideRange)
+    ) {
+      return
+    }
 
-    const next = overDragEl[nextElSib] ? overDragEl[nextElSib].getAttribute('data-range'): null
+    const next = overDragEl[nextElSib] ? overDragEl[nextElSib].getAttribute('data-range') : null
     const prev = overDragEl[prevElSib] ? overDragEl[prevElSib].getAttribute('data-range') : null
-    if(
+    if (
       (typeSideRange === 'left' && (next === 'right' || prev === 'right'))
       ||
       (typeSideRange === 'right' && (next === 'left' || prev === 'left'))
-    ){return}
+    ) {
+      return
+    }
 
     const nextEl = getNextElementByX(event.clientX, overDragEl);
     if (nextEl && actRngEl === nextEl[prevElSib] || actRngEl === nextEl) {

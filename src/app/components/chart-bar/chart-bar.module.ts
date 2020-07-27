@@ -2,7 +2,7 @@ import {NgModule} from "@angular/core";
 import {ChartBarComponent} from "./chart-bar.component";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import { RangeSelectionDirective } from './shared/range-selection.directive';
+import {RangeSelectionDirective} from './shared/range-selection.directive';
 
 
 @NgModule({
@@ -19,4 +19,5 @@ import { RangeSelectionDirective } from './shared/range-selection.directive';
   ]
 })
 
-export class ChartBarModule {}
+export class ChartBarModule {
+}
